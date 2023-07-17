@@ -1,4 +1,4 @@
-import slider from "../utils/slider.js";
+import slider from "../utils/slider.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
