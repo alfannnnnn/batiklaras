@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Kemeja Batik Ayoe BK0073",
+    "img": "images/BK0073.png",
+    "material": "Cotton Silk",
+    "initialPrice": "Rp99.000",
+    "afterPrice": "Rp20.000",
+    "discount": true,
+    "sale": 456,
+    "description": "asdsd",
+    "size": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"]
+  },
+  {
+    "name": "Kemeja Batik Ayoe BK0073-2",
+    "img": "images/BK0073-2.png",
+    "material": "Cotton Silk",
+    "initialPrice": "Rp99.000",
+    "afterPrice": "Rp20.000",
+    "discount": true,
+    "sale": 231,
+    "description": "asdsd",
+    "size": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"]
+  },
+  {
+    "name": "Kemeja Batik Ayoe BK0602",
+    "img": "images/BK0602.png",
+    "material": "Cotton Silk",
+    "initialPrice": "Rp120.000",
+    "afterPrice": "Rp40.000",
+    "discount": true,
+    "sale": 231,
+    "description": "asdsd",
+    "size": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"]
+  },
+  {
+    "name": "Kemeja Batik Ayoe BK0602-2",
+    "img": "images/BK0602-2.png",
+    "material": "Cotton Silk",
+    "initialPrice": "Rp120.000",
+    "afterPrice": "Rp40.000",
+    "discount": true,
+    "sale": 231,
+    "description": "asdsd",
+    "size": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"]
+  },
+  {
+    "name": "Kemeja Batik Korpri Toya BK0996",
+    "img": "images/BK0996.png",
+    "material": "Katun",
+    "initialPrice": "Rp175.000",
+    "afterPrice": "",
+    "discount": false,
+    "sale": 542,
+    "description": "asdsd",
+    "size": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"]
+  },
+  {
+    "name": "Blouse Batik Korpri Toya BK0996",
+    "img": "images/BK0999.jpeg",
+    "material": "Katun",
+    "initialPrice": "Rp175.000",
+    "afterPrice": "",
+    "discount": false,
+    "sale": 654,
+    "description": "asdsd",
+    "size": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"]
+  },
+  {
+    "name": "Kemeja Batik Elok Joyo BK1035",
+    "img": "images/BK1035.png",
+    "material": "Katun",
+    "initialPrice": "Rp240.000",
+    "afterPrice": "",
+    "discount": false,
+    "sale": 542,
+    "description": "asdsd",
+    "size": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"]
+  },
+  {
+    "name": "Kemeja Batik Elok Joyo BK0988",
+    "img": "images/BK0988.jpg",
+    "material": "Katun",
+    "initialPrice": "Rp255.000",
+    "afterPrice": "",
+    "discount": false,
+    "sale": 132,
+    "description": "asdsd",
+    "size": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"]
+  },
+  {
+    "name": "Kemeja Batik Elok Joyo BK1095",
+    "img": "images/BK1095.png",
+    "material": "Katun",
+    "initialPrice": "Rp235.000",
+    "afterPrice": "",
+    "discount": false,
+    "sale": 321,
+    "description": "asdsd",
+    "size": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"]
+  },
+  {
+    "name": "Kemeja Batik Elok Joyo BK0972",
+    "img": "images/BK0972.png",
+    "material": "Katun",
+    "initialPrice": "Rp240.000",
+    "afterPrice": "",
+    "discount": false,
+    "sale": 143,
+    "description": "asdsd",
+    "size": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"]
+  },
+  {
+    "name": "Kemeja Batik Elok Joyo BK0971",
+    "img": "images/BK0971.jpg",
+    "material": "Katun",
+    "initialPrice": "Rp240.000",
+    "afterPrice": "",
+    "discount": false,
+    "sale": 223,
+    "description": "asdsd",
+    "size": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"]
+  },
+  {
+    "name": "Kemeja Batik Elok Joyo BK0984",
+    "img": "images/BK0984.png",
+    "material": "Katun",
+    "initialPrice": "Rp240.000",
+    "afterPrice": "",
+    "discount": false,
+    "sale": 125,
+    "description": "asdsd",
+    "size": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"]
+  }
+]

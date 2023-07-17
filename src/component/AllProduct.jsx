@@ -1,5 +1,5 @@
 import React from "react";
-import products from "../utils/products.js";
+import products from "../utils/products.json";
 import stars from "../assets/stars.png";
 
 const AllProduct = () => {
@@ -16,10 +16,23 @@ const AllProduct = () => {
               >
                 <img src={product.img} alt={product.name} />
                 <div className="flex flex-col px-2 py-2 lg:py-4">
-                  <h1 className="font-bold text-ellipsis text-sm lg:text-md ">
+                  <h1 className="truncate font-bold text-ellipsis text-sm lg:text-md ">
                     {product.name.toUpperCase()}
                   </h1>
-                  <p className="text-sm lg:text-md">{product.initialPrice}</p>
+                  <div className="flex items-center justify-start gap-2">
+                    <p className="text-sm lg:text-md">
+                      {product.afterPrice
+                        ? product.afterPrice
+                        : product.initialPrice}
+                    </p>
+                    <p
+                      className={`${
+                        product.afterPrice ? "block" : "hidden"
+                      } text-[10px] bg-black p-[2px] text-white`}
+                    >
+                      Diskon
+                    </p>
+                  </div>
                   <div className="flex items-center justify-between gap-1">
                     <div className="flex lg:gap-1">
                       <img className="h-3" src={stars} alt="stars" />
@@ -28,7 +41,7 @@ const AllProduct = () => {
                       <img className="h-3" src={stars} alt="stars" />
                       <img className="h-3" src={stars} alt="stars" />
                     </div>
-                    <p className="text-xs lg:text-sm">1RB+ Terjual</p>
+                    <p className="text-xs lg:text-sm">{product.sale} Terjual</p>
                   </div>
                 </div>
               </div>
