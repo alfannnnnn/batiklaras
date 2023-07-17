@@ -1,6 +1,6 @@
 import slider from "../utils/slider.json";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -16,8 +16,12 @@ const Slider = () => {
             dynamicBullets: true,
           }}
           slidesPerView={1}
-          modules={[Pagination]}
+          modules={[Autoplay, Pagination]}
           className="mySwiper"
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+          }}
         >
           {slider.map((slide, index) => (
             <SwiperSlide key={index}>
