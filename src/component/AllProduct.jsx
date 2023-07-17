@@ -4,15 +4,15 @@ import stars from "../assets/stars.png";
 
 const AllProduct = () => {
   return (
-    <div className="w-full">
+    <div className="w-full bg-gray-50">
       <div className="max-w-screen-xl mx-auto p-4">
         <div className="flex gap-4 flex-col items-center justify-between mb-4">
           <h1 className="text-lg lg:text-2xl font-bold">SEMUA PRODUK</h1>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className=" grid grid-cols-2 lg:grid-cols-4 gap-4">
             {products.map((product, index) => (
               <div
                 key={index}
-                className="overflow-hidden flex flex-col rounded-md cursor-pointer hover:border hover:shadow-md"
+                className="overflow-hidden bg-white flex flex-col rounded-md cursor-pointer hover:border hover:shadow-md"
               >
                 <img src={product.img} alt={product.name} />
                 <div className="flex flex-col px-2 py-2 lg:py-4">
