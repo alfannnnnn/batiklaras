@@ -1,7 +1,7 @@
 const products = [
   {
     name: "Kemeja Batik Pendek Elok Joyo BK0971",
-    img: ["../assets/BK0971.JPG"],
+    img: ["../src/assets/BK0971.JPG"],
     material: "Premium Royale Satin",
     initialPrice: "Rp290.000",
     afterPrice: "",
