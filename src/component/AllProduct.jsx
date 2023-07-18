@@ -20,7 +20,7 @@ const AllProduct = () => {
                     {product.brand}
                   </h1>
                   <div className="flex items-center justify-start gap-2">
-                    <p className="text-sm truncate text-ellipsis">
+                    <p className="text-gray-600 text-sm truncate text-ellipsis">
                       {product.name}
                     </p>
                   </div>
@@ -36,7 +36,7 @@ const AllProduct = () => {
                   </div>
                   <div className="flex items-center justify-between gap-1">
                     <p
-                      className={`text-md font-bold truncate text-ellipsis ${
+                      className={`text-sm lg:text-md font-bold truncate text-ellipsis ${
                         product.afterPrice ? "text-red-700" : ""
                       }`}
                     >
@@ -44,7 +44,9 @@ const AllProduct = () => {
                         ? product.afterPrice
                         : product.initialPrice}
                     </p>
-                    <p className="text-xs lg:text-sm">{product.sale} Terjual</p>
+                    <p className="text-gray-700 text-xs lg:text-sm">
+                      {product.sale} Terjual
+                    </p>
                   </div>
                 </div>
               </div>
