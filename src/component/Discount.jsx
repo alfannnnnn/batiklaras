@@ -39,12 +39,16 @@ const Discount = () => {
         >
           {discountProduct.map((product, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col">
+              <div className="flex flex-col cursor-pointer">
                 <img src={product.img} alt={product.name} />
                 <div className="flex flex-col p-2">
                   <h1 className="font-bold">{product.name.toUpperCase()}</h1>
-                  <p className="line-through">{product.initialPrice}</p>
-                  <p>{product.afterPrice}</p>
+                  <p className="line-through text-lg font-bold">
+                    {product.initialPrice}
+                  </p>
+                  <p className="font-bold text-md text-red-700">
+                    {product.afterPrice}
+                  </p>
                 </div>
               </div>
             </SwiperSlide>

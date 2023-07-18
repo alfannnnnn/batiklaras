@@ -4,6 +4,7 @@ import menu from "../assets/menu.png";
 import close from "../assets/close.png";
 import whatsapp from "../assets/whatsapp.svg";
 import shopee from "../assets/shopee.svg";
+import tokped from "../assets/tokped.png";
 
 const Navbar = () => {
   const [isTogle, setIsTogle] = useState(false);
@@ -27,19 +28,19 @@ const Navbar = () => {
             <ul className="py-2 text-sm text-gray-700 dark:text-gray-200 cursor-pointer">
               <li className="px-4 py-2 flex justify-start items-center gap-2 hover:bg-gray-100">
                 <img src={whatsapp} className="h-6" />
-                <a href="https://api.whatsapp.com/send/?phone=6281297140412&text&type=phone_number&app_absent=0">
+                <a href="https://api.whatsapp.com/send/?phone=62882008983907&text&type=phone_number&app_absent=0">
                   Whatsapp
                 </a>
               </li>
               <li className="px-4 py-2 flex justify-start items-center gap-2 hover:bg-gray-100">
                 <img src={shopee} className="h-6" />
-                <a href="https://shopee.co.id/maetha.id?categoryId=100014&entryPoint=ShopByPDP&itemId=12398904433">
+                <a href="https://shopee.co.id/batiklaras.id?page=0&shopCollection=244805503">
                   Shopee
                 </a>
               </li>
               <li className="px-4 py-2 flex justify-start items-center gap-2 hover:bg-gray-100">
-                <img src={shopee} className="h-6" />
-                <a href="https://shopee.co.id/maetha.id?categoryId=100014&entryPoint=ShopByPDP&itemId=12398904433">
+                <img src={tokped} className="h-6" />
+                <a href="https://www.tokopedia.com/batik-laras?source=universe&st=product">
                   Tokopedia
                 </a>
               </li>

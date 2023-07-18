@@ -1,6 +1,6 @@
 import React from "react";
 import products from "../utils/products.json";
-import stars from "../assets/stars.png";
+import cod from "../assets/cod.png";
 
 const AllProduct = () => {
   return (
@@ -16,31 +16,34 @@ const AllProduct = () => {
               >
                 <img src={product.img} alt={product.name} />
                 <div className="flex flex-col px-2 py-2 lg:py-4">
-                  <h1 className="truncate font-bold text-ellipsis text-sm lg:text-md ">
-                    {product.name.toUpperCase()}
+                  <h1 className="truncate font-bold text-ellipsis text-md lg:text-md ">
+                    {product.brand}
                   </h1>
                   <div className="flex items-center justify-start gap-2">
-                    <p className="text-sm lg:text-md">
+                    <p className="text-sm truncate text-ellipsis">
+                      {product.name}
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-start gap-2">
+                    <p
+                      className={`${
+                        product.afterPrice ? "block" : "hidden"
+                      } py-1 px-1 bg-red-700 text-white font-bold rounded-sm text-[8px]`}
+                    >
+                      Discount
+                    </p>
+                    <img className="my-1 w-6" src={cod} alt="cod" />
+                  </div>
+                  <div className="flex items-center justify-between gap-1">
+                    <p
+                      className={`text-md font-bold truncate text-ellipsis ${
+                        product.afterPrice ? "text-red-700" : ""
+                      }`}
+                    >
                       {product.afterPrice
                         ? product.afterPrice
                         : product.initialPrice}
                     </p>
-                    <p
-                      className={`${
-                        product.afterPrice ? "block" : "hidden"
-                      } text-[10px] bg-black p-[2px] text-white`}
-                    >
-                      Diskon
-                    </p>
-                  </div>
-                  <div className="flex items-center justify-between gap-1">
-                    <div className="flex lg:gap-1">
-                      <img className="h-3" src={stars} alt="stars" />
-                      <img className="h-3" src={stars} alt="stars" />
-                      <img className="h-3" src={stars} alt="stars" />
-                      <img className="h-3" src={stars} alt="stars" />
-                      <img className="h-3" src={stars} alt="stars" />
-                    </div>
                     <p className="text-xs lg:text-sm">{product.sale} Terjual</p>
                   </div>
                 </div>
