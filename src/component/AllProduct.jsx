@@ -17,11 +17,7 @@ const AllProduct = () => {
                 key={index}
                 className="overflow-hidden bg-white flex flex-col rounded-md cursor-pointer hover:border hover:shadow-md"
               >
-                <img
-                  src={product.img}
-                  onClick={() => console.log(product.img)}
-                  alt={product.name}
-                />
+                <img src={product.img} alt={product.name} />
                 <div className="flex flex-col px-2 py-2 lg:py-4">
                   <h1 className="truncate font-bold text-ellipsis text-md lg:text-md ">
                     {product.brand}
