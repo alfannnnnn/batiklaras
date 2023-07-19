@@ -23,10 +23,22 @@ const Discount = () => {
     <div className="w-full bg-gray-50">
       <div className="max-w-screen-xl mx-auto p-4">
         <div className="flex items-center justify-between mb-4">
-          <h1 className="text-lg lg:text-2xl font-bold">Sedang Diskon</h1>
-          <button className="py-1 px-2 lg:py-2 lg:px-4 rounded-lg hover:shadow-lg bg-black text-white">
+          <h1 className="text-md lg:text-2xl font-bold">Sedang Diskon</h1>
+          <a className="cursor-pointer text-gray-600 hover:text-gray-900 inline-flex items-center text-sm md:mb-2 lg:mb-0">
             Lihat Semua
-          </button>
+            <svg
+              class="w-4 h-4 ml-2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
         </div>
         <Swiper
           style={{
@@ -41,7 +53,7 @@ const Discount = () => {
         >
           {discountProduct.map((product, index) => (
             <SwiperSlide key={index}>
-              <div className="overflow-hidden mb-8 mx-2 bg-white flex flex-col rounded-md cursor-pointer hover:border hover:shadow-md">
+              <div className="overflow-hidden mb-7 mx-2 bg-white flex flex-col rounded-md cursor-pointer hover:border hover:shadow-md">
                 <img src={product.img} alt={product.name} />
                 <div className="flex flex-col px-2 py-2 lg:py-4">
                   <h1 className="truncate font-bold text-ellipsis text-md lg:text-md ">
