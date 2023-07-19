@@ -1,11 +1,13 @@
 import React from "react";
 import products from "../utils/products.json";
 import cod from "../assets/cod.png";
+import banner from "../assets/banner.jpg";
 
 const AllProduct = () => {
   return (
     <div className="w-full bg-gray-50">
       <div className="max-w-screen-xl mx-auto p-4">
+        <img className="w-full mb-8" src={banner} alt="banner" />
         <div className="flex gap-4 flex-col items-center justify-between mb-4">
           <h1 className="text-lg lg:text-2xl font-bold">SEMUA PRODUK</h1>
           <div className=" grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -28,11 +30,11 @@ const AllProduct = () => {
                     <p
                       className={`${
                         product.afterPrice ? "block" : "hidden"
-                      } py-1 px-1 bg-red-700 text-white font-bold rounded-sm text-[8px]`}
+                      } p-1 bg-red-700 text-white font-bold rounded-sm text-[8px]`}
                     >
                       Discount
                     </p>
-                    <img className="my-1 w-6" src={cod} alt="cod" />
+                    <img className="w-6" src={cod} alt="cod" />
                   </div>
                   <div className="flex items-center justify-between gap-1">
                     <p
