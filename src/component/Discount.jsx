@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 const Discount = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -24,21 +25,24 @@ const Discount = () => {
       <div className="max-w-screen-xl mx-auto p-4">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-md lg:text-2xl font-bold">Sedang Diskon</h1>
-          <a className="cursor-pointer text-gray-600 hover:text-gray-900 inline-flex items-center text-sm md:mb-2 lg:mb-0">
+          <Link
+            to="/batiklaras/diskon"
+            className="cursor-pointer text-gray-600 hover:text-gray-900 inline-flex items-center text-sm md:mb-2 lg:mb-0"
+          >
             Lihat Semua
             <svg
-              class="w-4 h-4 ml-2"
+              className="w-4 h-4 ml-2"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="2"
+              strokeWidth="2"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>
             </svg>
-          </a>
+          </Link>
         </div>
         <Swiper
           style={{

@@ -1,11 +1,16 @@
 import React from "react";
-import Homepage from "./layout/Homepage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import DiscountAll from "./pages/DiscountAll";
 
 const App = () => {
   return (
-    <>
-      <Homepage />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/batiklaras" Component={Homepage} />
+        <Route path="/batiklaras/diskon" Component={DiscountAll} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

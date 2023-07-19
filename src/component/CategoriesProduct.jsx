@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import products from "../utils/products.json";
 import cod from "../assets/cod.png";
-import banner from "../assets/banner.jpg";
-import { Link } from "react-router-dom";
 
 const AllProduct = () => {
+  const [discountProduct, setDiscountProduct] = useState([]);
+
+  useEffect(() => {
+    const filteredData = products.filter(
+      (product) => product.discount === true
+    );
+    setDiscountProduct(filteredData);
+  }, []);
+
   return (
     <div className="w-full bg-gray-50">
       <div className="max-w-screen-xl mx-auto p-4">
-        <img className="w-full mb-8" src={banner} alt="banner" />
         <div className="flex gap-4 flex-col items-center justify-between mb-4">
-          <h1 className="text-lg lg:text-2xl font-bold">SEMUA PRODUK</h1>
+          <h1 className="text-lg lg:text-2xl font-bold">Sedan Diskon</h1>
           <div className=" grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {products.map((product, index) => (
+            {discountProduct.map((product, index) => (
               <div
                 key={index}
                 className="overflow-hidden bg-white flex flex-col rounded-md cursor-pointer hover:border hover:shadow-md"
